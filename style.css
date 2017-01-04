@@ -1,0 +1,134 @@
+:root {
+	--sand-color: purple;
+	--bkgrnd-color: white;
+}
+
+body {
+	background-color: #CCCCCC
+}
+
+.main {
+	margin-left: 25%;
+}
+
+.block {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.logo {
+	width: 466px;
+	height: 676px;
+	background-color: black;
+	background-image: url("http://timesup-er.com.au/wp-content/uploads/2016/12/Escape-Room-Times-Up-466x675.png");
+	background-repeat: no-repeat;
+}
+
+.replica {
+	width: 466px;
+	height: 676px;
+	background-color: var(--bkgrnd-color);
+}
+
+.sand {
+	background-color: var(--sand-color);
+	position: absolute;
+	width: 466px;
+	height: 476px;
+	margin-top: 200px;
+}
+
+.sand:before {
+	content: "";
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	width: 150px;
+	height: 110px;
+	background-color: white;
+	right: 90px;
+	top: -88px;
+}
+
+.sand:after {
+	content: "";
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	width: 150px;
+	height: 110px;
+	background-color: var(--sand-color);
+	left: 85px;
+	top: -20px;
+}
+
+.cutouts {
+	position: absolute;
+}
+
+.cutouts .c1 {
+	border-bottom: solid transparent 60px;
+	border-left: solid black 80px;
+}
+
+.cutouts .c2 {
+	border-top: solid transparent 248px;
+	border-left: solid black 200px;
+}
+
+.cutouts .c3 {
+	height: 30px;
+	width: 200px;
+	background-color: black;
+}
+
+.bottom {
+	transform: rotateX(180deg);
+}
+
+.right {
+	transform: rotateY(180deg);
+	margin-left: 266px;
+}
+
+.positive {
+	position: absolute;
+}
+
+.positive .cutouts {
+	margin-left: 20px;
+}
+
+.positive .bottom {
+	margin-left: 0;
+}
+
+.positive .right {
+	margin-left: 246px;
+}
+
+.positive .cutouts .c1 {
+	border-left-color: white;
+}
+
+.positive .cutouts .c2 {
+	border-left-color: white;
+}
+
+.positive .cutouts .c3 {
+	background-color: white;
+}
+
+.border {
+	position: absolute;
+	width: 426px;
+	height: 656px;
+	border-top: solid white 10px;
+	border-bottom: solid white 10px;
+	border-left: solid white 20px;
+	border-right: solid white 20px;
+}
